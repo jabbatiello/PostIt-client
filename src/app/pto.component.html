@@ -1,0 +1,42 @@
+<div class="container col-lg-12">
+	<h2>PTO Accrual</h2>
+	<div class="col-lg-6 form-panel">
+		<div class="row form-inline">
+			<label>Starting Balance: </label>
+			<input type="text" name="startbalance" required> hrs.
+		</div>
+		<div class="row form-inline">
+			<label>Accrual Unit: </label>
+			<input type="text" name="accrualunit" placeholder="e.g. 5" required> hrs.
+		</div>
+		<div class="row form-inline">
+			<label>Accrual Frequency: </label>
+			<select name="accrual" required>
+				<option value="weekly">Weekly</option>
+				<option value="biweekly">Biweekly</option>
+				<option value="semimonthly">Semi-monthly</option>
+				<option value="monthly">Monthly</option>								
+			</select>
+		</div>		
+		<div class="row form-inline">
+			<label>Reset Frequency: </label>
+			<select name="resetfreq" required>
+				<option value="endofyear">End Of Year</option>								
+			</select>
+		</div>	
+		<div class="row form-inline">
+			<label>Annual Max Carry-Over Limit: </label>
+			<input type="text" name="maxcarryover" placeholder="e.g. 60" required> hrs.
+		</div>
+		<div class="row form-inline">
+			<label>Max Total Balance: </label>
+			<input type="text" name="maxtotal" placeholder="e.g. 100" required> hrs.
+		</div>		
+		<div class="row form-inline button-panel1">
+			<button type="submit" class="savebtn"><i class="glyphicon glyphicon-floppy-disk"></i> Save</button>
+			<button type="button" class="cancelbtn"><i class="glyphicon glyphicon-remove"></i> Cancel</button>
+		</div>
+	</div>
+</div>
+
+

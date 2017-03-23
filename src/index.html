@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PostIt</title>
+    <base href="/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="841258378396-krepeotkjmejstfka5khim8sn4tj40rg.apps.googleusercontent.com">
+ 
+	<script>
+	    gapi.load('auth2',function () {
+	      gapi.auth2.init();
+	    });
+  	</script> 
+	  	
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ng2-bootstrap/x.x.x/ng2-bootstrap.min.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+  
+    <link rel="stylesheet" href="styles.css">
+    <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('main.js').catch(function(err){ console.error(err); });
+    </script>
+    
+    <style>
+    	body {
+    		font-family: "museo-sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    		background-image: url("");
+    		background-repeat: no-repeat;
+    		color: #666;
+    		 }
+    </style>
+  </head>
+
+  <body>
+    <my-app>Loading...</my-app>
+  </body>
+</html>
